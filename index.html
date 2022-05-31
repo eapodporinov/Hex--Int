@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HEX &lt; - &gt; Int</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="input-div">
+    <b>HEX : 0x</b>
+    <input type="text" class="input-text" name="hex-input"><br/>
+  </div>
+  
+  <div id="buttons"> 
+    <button id="hex-to-little-endian-button" class="btn third" disabled>Little Endian sequence</button><br/>
+    <output id="hex-to-little-endian-output" class="out"></output><br/>
+    <button id="hex-to-big-endian-button" class="btn third" disabled>Big Endian sequence</button><br/>
+    <output id="hex-to-big-endian-output" class="out bottom"></output><br/>
+    
+    <b>Number of bytes:</b>
+    <output id="number-of-bytes-output" class="out right small"></output><br/>
+    
+    <button id="little-endian-to-hex-button" class="btn third" disabled>Little Endian to HEX</button><br/>
+    <output id="little-endian-to-hex-output" class="out"></output><br/>
+    
+    <button id="big-endian-to-hex-button" class="btn third" disabled>Big Endian to HEX</button><br/>
+    <output id="big-endian-to-hex-output" class="out"></output><br/>
+    
+    <button id="little-endian-to-decimal-button" class="btn third" disabled>Little Endian to Int</button><br/>
+    <output id="little-endian-to-decimal-output" class="out"></output><br/>
+    
+    <button id="big-endian-to-decimal-button" class="btn third" disabled>Big Endian to Int</button><br/>
+    <output id="big-endian-to-decimal-output" class="out"></output><br/>
+  </div>
+  
+  <div id="test-div">
+    <b>Test Vectors</b>
+    <div id="first-test-div" class="out test"></div>
+    <div id="second-test-div" class="out test"></div>
+    <div id="third-test-div" class="out test"></div>
+    <div id="fourth-test-div" class="out test"></div>
+  </div>
+  
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
