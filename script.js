@@ -179,7 +179,6 @@ input.addEventListener('input', () => {
     });
   })
 
-
 function resizeInput() {
   this.style.width = this.value.length + 'em';
 }
