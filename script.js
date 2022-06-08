@@ -51,6 +51,8 @@ document.getElementById('big-endian-to-decimal-button')
   
   
 function hexToBytes(hex) { // hexToBigEndianSequence
+  if (hex.length % 2 != 0) hex = '0' + hex; // UPDATE 08.06.2022 (*)
+  
   for (var bytes = [], i = 0; i < hex.length; i += 2)
     bytes.push(parseInt(hex.substr(i, 2), 16)
       .toString(2)
